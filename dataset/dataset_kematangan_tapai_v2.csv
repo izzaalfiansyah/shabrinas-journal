@@ -1,0 +1,601 @@
+percobaan,jam,suhu,kelembaban,kadar_gas,status_kematangan
+1,1,28.73,78.77,0.02,belum matang
+1,2,28.51,78.62,0.01,belum matang
+1,3,28.33,78.22,0.01,belum matang
+1,4,29.2,78.46,0.01,belum matang
+1,5,28.42,78.65,0.0,belum matang
+1,6,28.48,78.93,0.02,belum matang
+1,7,28.99,78.87,0.01,belum matang
+1,8,28.5,79.07,0.01,belum matang
+1,9,28.48,78.72,0.01,belum matang
+1,10,28.53,78.97,0.01,belum matang
+1,11,28.99,78.77,0.02,belum matang
+1,12,30.19,79.32,0.01,belum matang
+1,13,29.24,78.96,0.0,belum matang
+1,14,29.18,79.13,0.0,belum matang
+1,15,28.36,79.11,0.01,belum matang
+1,16,29.09,79.62,0.01,belum matang
+1,17,29.17,79.53,0.01,belum matang
+1,18,28.04,79.93,0.01,belum matang
+1,19,28.59,80.11,0.01,belum matang
+1,20,29.21,80.11,0.0,belum matang
+1,21,28.76,80.46,0.01,belum matang
+1,22,29.54,80.56,0.03,belum matang
+1,23,28.34,80.67,0.01,belum matang
+1,24,28.09,81.25,0.01,belum matang
+1,25,28.81,81.25,0.0,belum matang
+1,26,28.4,81.86,0.01,belum matang
+1,27,28.58,82.2,0.02,belum matang
+1,28,28.92,82.58,0.02,belum matang
+1,29,28.88,82.9,0.01,belum matang
+1,30,28.67,83.36,0.23,belum matang
+1,31,28.65,83.41,0.14,belum matang
+1,32,28.6,84.41,0.16,belum matang
+1,33,28.71,85.05,0.0,belum matang
+1,34,28.32,85.84,0.14,belum matang
+1,35,27.96,85.91,0.05,belum matang
+1,36,28.85,86.6,0.1,belum matang
+1,37,28.8,87.34,0.15,belum matang
+1,38,28.51,87.7,0.22,belum matang
+1,39,28.79,88.46,0.09,belum matang
+1,40,28.41,88.97,0.14,belum matang
+1,41,29.49,89.57,0.38,belum matang
+1,42,28.36,89.75,0.21,belum matang
+1,43,29.26,90.49,0.37,matang
+1,44,28.8,90.46,0.37,matang
+1,45,28.18,90.99,0.24,matang
+1,46,29.11,91.18,0.32,matang
+1,47,28.35,91.42,0.45,matang
+1,48,29.32,91.86,0.56,matang
+1,49,30.07,91.92,0.44,matang
+1,50,28.08,92.43,0.63,matang
+1,51,28.36,92.5,0.66,terlalu matang
+1,52,28.91,92.71,0.6,terlalu matang
+1,53,28.19,92.89,0.76,terlalu matang
+1,54,29.16,92.61,0.61,terlalu matang
+1,55,28.23,93.07,0.87,terlalu matang
+1,56,29.01,93.2,0.71,terlalu matang
+1,57,28.87,92.82,0.79,terlalu matang
+1,58,29.24,93.11,1.06,terlalu matang
+1,59,29.06,93.77,1.03,terlalu matang
+1,60,28.09,93.27,1.01,terlalu matang
+2,1,28.82,78.94,0.01,belum matang
+2,2,28.9,78.64,0.0,belum matang
+2,3,28.71,79.0,0.01,belum matang
+2,4,28.31,78.89,0.01,belum matang
+2,5,28.49,78.9,0.01,belum matang
+2,6,28.36,78.97,0.01,belum matang
+2,7,29.48,79.14,0.0,belum matang
+2,8,28.47,79.07,0.01,belum matang
+2,9,29.19,79.78,0.01,belum matang
+2,10,29.5,79.24,0.01,belum matang
+2,11,28.78,79.26,0.01,belum matang
+2,12,28.82,79.07,0.01,belum matang
+2,13,30.09,78.87,0.01,belum matang
+2,14,28.13,79.23,0.02,belum matang
+2,15,28.97,79.2,0.01,belum matang
+2,16,29.28,79.38,0.01,belum matang
+2,17,28.96,79.52,0.02,belum matang
+2,18,29.25,79.39,0.01,belum matang
+2,19,28.61,80.13,0.01,belum matang
+2,20,28.88,80.24,0.01,belum matang
+2,21,28.34,80.28,0.01,belum matang
+2,22,28.61,80.93,0.01,belum matang
+2,23,28.31,81.02,0.02,belum matang
+2,24,29.45,80.82,0.01,belum matang
+2,25,29.57,81.3,0.01,belum matang
+2,26,29.32,81.61,0.01,belum matang
+2,27,27.32,81.98,0.01,belum matang
+2,28,28.31,82.92,0.0,belum matang
+2,29,28.72,83.07,0.02,belum matang
+2,30,28.22,83.75,0.1,belum matang
+2,31,28.45,84.12,0.13,belum matang
+2,32,28.64,84.56,0.08,belum matang
+2,33,28.99,85.22,0.29,belum matang
+2,34,28.32,86.07,0.0,belum matang
+2,35,28.86,86.33,0.18,belum matang
+2,36,28.63,86.73,0.11,belum matang
+2,37,28.64,87.5,0.21,belum matang
+2,38,28.59,88.05,0.22,belum matang
+2,39,29.34,88.52,0.12,belum matang
+2,40,28.66,89.05,0.28,belum matang
+2,41,28.93,89.4,0.37,belum matang
+2,42,28.64,89.93,0.24,belum matang
+2,43,28.83,90.46,0.37,belum matang
+2,44,29.34,90.88,0.31,matang
+2,45,29.28,90.91,0.36,matang
+2,46,28.87,91.31,0.42,matang
+2,47,28.53,92.0,0.29,matang
+2,48,28.33,92.07,0.5,matang
+2,49,29.25,92.2,0.46,matang
+2,50,28.49,92.29,0.43,matang
+2,51,29.42,92.43,0.45,terlalu matang
+2,52,28.78,92.7,0.52,terlalu matang
+2,53,28.53,92.81,0.65,terlalu matang
+2,54,28.68,92.79,0.71,terlalu matang
+2,55,28.21,92.72,0.67,terlalu matang
+2,56,28.83,93.15,0.95,terlalu matang
+2,57,29.37,93.14,0.87,terlalu matang
+2,58,28.44,93.24,0.91,terlalu matang
+2,59,29.1,93.14,1.07,terlalu matang
+2,60,29.7,93.34,1.14,terlalu matang
+3,1,29.69,78.15,0.01,belum matang
+3,2,30.13,78.16,0.02,belum matang
+3,3,30.09,78.08,0.02,belum matang
+3,4,30.49,78.55,0.01,belum matang
+3,5,30.38,77.92,0.01,belum matang
+3,6,29.81,77.97,0.02,belum matang
+3,7,28.98,77.89,0.01,belum matang
+3,8,30.18,78.5,0.01,belum matang
+3,9,30.63,78.49,0.01,belum matang
+3,10,29.85,78.34,0.01,belum matang
+3,11,29.34,78.52,0.01,belum matang
+3,12,30.03,78.57,0.0,belum matang
+3,13,29.44,78.56,0.01,belum matang
+3,14,30.02,78.73,0.02,belum matang
+3,15,30.05,78.7,0.0,belum matang
+3,16,29.21,78.98,0.02,belum matang
+3,17,30.66,78.83,0.01,belum matang
+3,18,30.01,79.54,0.01,belum matang
+3,19,30.67,79.33,0.02,belum matang
+3,20,30.4,79.51,0.0,belum matang
+3,21,29.76,79.98,0.01,belum matang
+3,22,29.67,79.85,0.0,belum matang
+3,23,30.61,80.35,0.01,belum matang
+3,24,29.99,80.03,0.01,belum matang
+3,25,30.56,80.98,0.01,belum matang
+3,26,29.88,81.3,0.01,belum matang
+3,27,29.06,81.52,0.01,belum matang
+3,28,30.45,81.65,0.01,belum matang
+3,29,29.85,82.16,0.01,belum matang
+3,30,30.26,82.8,0.31,belum matang
+3,31,29.73,83.27,0.06,belum matang
+3,32,29.48,83.78,0.0,belum matang
+3,33,29.79,84.44,0.0,belum matang
+3,34,29.84,85.0,0.19,belum matang
+3,35,30.49,85.72,0.09,belum matang
+3,36,29.52,86.23,0.11,belum matang
+3,37,29.28,87.14,0.14,belum matang
+3,38,29.58,86.77,0.27,belum matang
+3,39,29.4,87.74,0.3,belum matang
+3,40,29.4,88.25,0.37,belum matang
+3,41,28.66,88.55,0.15,belum matang
+3,42,29.8,89.15,0.16,belum matang
+3,43,29.56,89.42,0.25,belum matang
+3,44,30.0,90.14,0.41,matang
+3,45,30.22,90.14,0.33,matang
+3,46,31.08,90.83,0.32,matang
+3,47,30.68,90.84,0.32,matang
+3,48,30.59,90.92,0.23,matang
+3,49,30.36,91.42,0.47,matang
+3,50,29.71,91.57,0.45,terlalu matang
+3,51,29.58,91.72,0.5,terlalu matang
+3,52,29.48,91.85,0.33,terlalu matang
+3,53,30.23,92.18,0.62,terlalu matang
+3,54,30.01,92.28,0.61,terlalu matang
+3,55,29.62,92.44,0.76,terlalu matang
+3,56,30.91,92.76,0.89,terlalu matang
+3,57,29.51,92.4,0.77,terlalu matang
+3,58,30.03,92.04,0.89,terlalu matang
+3,59,29.74,92.34,1.1,terlalu matang
+3,60,29.32,92.76,1.38,terlalu matang
+4,1,28.51,78.51,0.01,belum matang
+4,2,27.44,78.75,0.02,belum matang
+4,3,26.77,78.5,0.01,belum matang
+4,4,27.91,78.75,0.01,belum matang
+4,5,28.05,78.67,0.02,belum matang
+4,6,28.14,78.8,0.01,belum matang
+4,7,27.77,78.67,0.01,belum matang
+4,8,27.8,78.85,0.02,belum matang
+4,9,28.45,78.77,0.02,belum matang
+4,10,27.81,78.47,0.0,belum matang
+4,11,27.07,78.87,0.01,belum matang
+4,12,28.85,79.06,0.01,belum matang
+4,13,28.42,78.63,0.01,belum matang
+4,14,28.4,78.86,0.02,belum matang
+4,15,28.18,79.17,0.01,belum matang
+4,16,29.15,79.39,0.01,belum matang
+4,17,27.78,79.31,0.01,belum matang
+4,18,27.58,79.64,0.01,belum matang
+4,19,28.25,79.85,0.02,belum matang
+4,20,27.75,79.91,0.01,belum matang
+4,21,27.79,80.25,0.01,belum matang
+4,22,27.55,80.58,0.02,belum matang
+4,23,28.22,81.04,0.01,belum matang
+4,24,27.39,80.6,0.02,belum matang
+4,25,28.34,81.26,0.01,belum matang
+4,26,27.45,82.11,0.01,belum matang
+4,27,28.06,82.15,0.01,belum matang
+4,28,28.12,82.27,0.01,belum matang
+4,29,28.95,83.14,0.02,belum matang
+4,30,27.75,83.15,0.09,belum matang
+4,31,28.04,84.07,0.0,belum matang
+4,32,28.77,84.35,0.07,belum matang
+4,33,27.5,84.59,0.21,belum matang
+4,34,28.05,85.22,0.01,belum matang
+4,35,27.84,86.37,0.12,belum matang
+4,36,27.26,86.55,0.13,belum matang
+4,37,26.66,87.14,0.15,belum matang
+4,38,28.36,88.07,0.3,belum matang
+4,39,27.88,88.0,0.46,matang
+4,40,28.04,88.73,0.22,matang
+4,41,28.11,89.17,0.18,matang
+4,42,27.74,89.64,0.21,matang
+4,43,27.65,90.09,0.26,matang
+4,44,28.76,89.92,0.42,matang
+4,45,28.63,90.39,0.3,terlalu matang
+4,46,27.82,90.84,0.28,terlalu matang
+4,47,27.45,91.76,0.48,terlalu matang
+4,48,28.65,91.81,0.31,terlalu matang
+4,49,27.75,92.0,0.34,terlalu matang
+4,50,28.37,92.06,0.46,terlalu matang
+4,51,28.37,92.38,0.5,terlalu matang
+4,52,28.59,92.24,0.64,terlalu matang
+4,53,28.31,92.53,0.66,terlalu matang
+4,54,27.38,92.9,0.66,terlalu matang
+4,55,27.75,93.04,0.67,terlalu matang
+4,56,27.31,92.61,0.86,terlalu matang
+4,57,27.37,93.36,0.66,terlalu matang
+4,58,28.86,93.12,0.93,terlalu matang
+4,59,27.74,93.22,1.01,terlalu matang
+4,60,28.56,93.22,1.12,terlalu matang
+5,1,28.6,80.5,0.01,belum matang
+5,2,27.98,80.66,0.0,belum matang
+5,3,28.9,81.06,0.01,belum matang
+5,4,28.39,80.78,0.02,belum matang
+5,5,29.41,80.5,0.01,belum matang
+5,6,28.55,80.89,0.01,belum matang
+5,7,27.44,80.69,0.01,belum matang
+5,8,27.91,80.91,0.0,belum matang
+5,9,28.23,81.1,0.01,belum matang
+5,10,28.91,80.53,0.02,belum matang
+5,11,28.47,80.95,0.01,belum matang
+5,12,28.93,80.69,0.01,belum matang
+5,13,28.3,80.73,0.01,belum matang
+5,14,28.45,81.2,0.01,belum matang
+5,15,28.46,81.64,0.01,belum matang
+5,16,27.85,81.27,0.01,belum matang
+5,17,28.89,81.26,0.01,belum matang
+5,18,27.74,81.85,0.0,belum matang
+5,19,28.51,81.99,0.01,belum matang
+5,20,29.03,82.09,0.02,belum matang
+5,21,29.16,82.08,0.01,belum matang
+5,22,27.86,82.39,0.01,belum matang
+5,23,28.69,82.75,0.01,belum matang
+5,24,29.19,82.93,0.01,belum matang
+5,25,29.07,82.99,0.01,belum matang
+5,26,28.1,83.88,0.01,belum matang
+5,27,28.69,84.09,0.0,belum matang
+5,28,28.3,84.63,0.01,belum matang
+5,29,28.77,84.6,0.01,belum matang
+5,30,28.98,85.36,0.22,belum matang
+5,31,28.28,85.75,0.0,belum matang
+5,32,29.08,86.44,0.0,belum matang
+5,33,27.75,86.74,0.21,belum matang
+5,34,28.47,87.31,0.04,belum matang
+5,35,28.1,87.65,0.03,belum matang
+5,36,28.09,88.73,0.15,belum matang
+5,37,28.21,89.61,0.11,belum matang
+5,38,29.21,90.02,0.03,belum matang
+5,39,28.66,90.12,0.15,belum matang
+5,40,28.9,90.6,0.17,belum matang
+5,41,28.54,91.12,0.12,belum matang
+5,42,29.02,91.86,0.3,matang
+5,43,28.44,91.92,0.21,matang
+5,44,29.8,92.63,0.22,matang
+5,45,28.71,92.73,0.39,matang
+5,46,28.9,93.33,0.27,matang
+5,47,28.68,93.06,0.26,matang
+5,48,29.07,93.48,0.34,terlalu matang
+5,49,28.62,94.04,0.35,terlalu matang
+5,50,26.88,93.93,0.62,terlalu matang
+5,51,28.8,94.55,0.42,terlalu matang
+5,52,27.81,94.54,0.61,terlalu matang
+5,53,28.78,94.78,0.67,terlalu matang
+5,54,28.83,94.86,0.73,terlalu matang
+5,55,29.05,95.02,0.89,terlalu matang
+5,56,28.3,95.01,0.76,terlalu matang
+5,57,28.21,94.86,0.92,terlalu matang
+5,58,28.83,95.15,0.92,terlalu matang
+5,59,28.63,95.3,0.87,terlalu matang
+5,60,28.64,95.21,1.18,terlalu matang
+6,1,29.46,78.83,0.01,belum matang
+6,2,29.48,78.66,0.01,belum matang
+6,3,29.12,78.59,0.02,belum matang
+6,4,28.83,78.6,0.01,belum matang
+6,5,29.94,78.29,0.01,belum matang
+6,6,29.53,78.93,0.01,belum matang
+6,7,29.06,79.03,0.0,belum matang
+6,8,28.24,78.77,0.01,belum matang
+6,9,28.83,78.87,0.01,belum matang
+6,10,29.06,78.52,0.01,belum matang
+6,11,29.66,78.81,0.02,belum matang
+6,12,28.8,78.58,0.01,belum matang
+6,13,29.32,79.01,0.01,belum matang
+6,14,29.52,78.79,0.02,belum matang
+6,15,29.3,79.36,0.01,belum matang
+6,16,29.57,79.36,0.01,belum matang
+6,17,29.66,79.64,0.01,belum matang
+6,18,29.69,79.5,0.02,belum matang
+6,19,29.0,80.04,0.01,belum matang
+6,20,28.62,79.88,0.01,belum matang
+6,21,29.76,79.93,0.01,belum matang
+6,22,28.39,80.21,0.0,belum matang
+6,23,28.55,80.71,0.01,belum matang
+6,24,29.55,80.65,0.01,belum matang
+6,25,29.34,80.93,0.02,belum matang
+6,26,29.78,81.47,0.01,belum matang
+6,27,29.44,81.49,0.01,belum matang
+6,28,29.0,82.12,0.01,belum matang
+6,29,30.24,82.89,0.01,belum matang
+6,30,29.63,83.52,0.19,belum matang
+6,31,29.37,83.61,0.18,belum matang
+6,32,29.54,84.45,0.18,belum matang
+6,33,29.86,84.7,0.26,belum matang
+6,34,29.44,85.78,0.07,belum matang
+6,35,30.21,85.97,0.08,belum matang
+6,36,29.1,86.43,0.2,belum matang
+6,37,29.6,86.93,0.17,belum matang
+6,38,30.41,87.93,0.23,belum matang
+6,39,29.36,88.14,0.27,belum matang
+6,40,28.83,88.56,0.06,matang
+6,41,29.54,89.22,0.19,matang
+6,42,30.13,89.29,0.11,matang
+6,43,29.45,90.17,0.45,matang
+6,44,29.11,90.56,0.3,matang
+6,45,29.25,90.87,0.4,matang
+6,46,28.55,91.31,0.5,matang
+6,47,29.03,91.38,0.44,terlalu matang
+6,48,29.47,91.45,0.35,terlalu matang
+6,49,29.33,92.03,0.51,terlalu matang
+6,50,29.15,92.15,0.21,terlalu matang
+6,51,29.91,91.83,0.5,terlalu matang
+6,52,28.78,92.08,0.7,terlalu matang
+6,53,29.11,92.55,0.62,terlalu matang
+6,54,29.58,92.62,0.55,terlalu matang
+6,55,29.84,92.62,0.58,terlalu matang
+6,56,29.13,93.11,0.89,terlalu matang
+6,57,29.17,92.82,0.83,terlalu matang
+6,58,30.38,93.04,0.98,terlalu matang
+6,59,29.85,93.08,0.99,terlalu matang
+6,60,29.24,93.07,1.1,terlalu matang
+7,1,27.39,79.86,0.01,belum matang
+7,2,27.07,79.92,0.01,belum matang
+7,3,27.59,79.9,0.02,belum matang
+7,4,26.32,80.54,0.01,belum matang
+7,5,27.57,79.79,0.01,belum matang
+7,6,27.5,79.87,0.02,belum matang
+7,7,27.28,80.14,0.01,belum matang
+7,8,27.35,80.47,0.01,belum matang
+7,9,27.52,80.02,0.01,belum matang
+7,10,27.47,80.24,0.0,belum matang
+7,11,27.7,79.99,0.02,belum matang
+7,12,26.98,80.33,0.02,belum matang
+7,13,27.24,80.41,0.02,belum matang
+7,14,27.65,80.5,0.0,belum matang
+7,15,26.9,80.73,0.01,belum matang
+7,16,27.73,80.76,0.02,belum matang
+7,17,27.24,80.78,0.0,belum matang
+7,18,26.73,80.57,0.01,belum matang
+7,19,28.14,80.75,0.01,belum matang
+7,20,26.72,81.12,0.01,belum matang
+7,21,27.02,81.66,0.02,belum matang
+7,22,26.24,81.54,0.01,belum matang
+7,23,27.93,81.85,0.01,belum matang
+7,24,26.79,81.92,0.02,belum matang
+7,25,26.45,83.01,0.01,belum matang
+7,26,27.71,83.01,0.01,belum matang
+7,27,27.56,83.24,0.01,belum matang
+7,28,27.35,83.51,0.01,belum matang
+7,29,26.87,84.34,0.01,belum matang
+7,30,26.41,84.7,0.25,belum matang
+7,31,27.75,85.0,0.0,belum matang
+7,32,27.3,85.62,0.02,belum matang
+7,33,27.64,86.56,0.15,belum matang
+7,34,27.45,86.56,0.28,belum matang
+7,35,27.33,87.19,0.16,belum matang
+7,36,27.6,87.9,0.28,belum matang
+7,37,27.56,88.37,0.22,belum matang
+7,38,27.62,88.71,0.3,belum matang
+7,39,27.22,89.44,0.28,belum matang
+7,40,27.74,89.86,0.3,belum matang
+7,41,27.09,90.84,0.16,belum matang
+7,42,27.49,90.76,0.48,belum matang
+7,43,26.75,91.44,0.21,belum matang
+7,44,27.19,91.81,0.43,matang
+7,45,28.18,91.77,0.36,matang
+7,46,28.1,92.06,0.39,matang
+7,47,27.37,92.76,0.31,matang
+7,48,26.65,92.56,0.52,matang
+7,49,27.92,93.23,0.4,matang
+7,50,26.55,93.49,0.39,terlalu matang
+7,51,27.01,93.44,0.52,terlalu matang
+7,52,26.99,93.73,0.52,terlalu matang
+7,53,27.72,94.07,0.64,terlalu matang
+7,54,27.6,94.41,0.56,terlalu matang
+7,55,26.75,94.24,0.93,terlalu matang
+7,56,27.24,94.54,0.81,terlalu matang
+7,57,27.03,94.08,0.93,terlalu matang
+7,58,26.91,94.36,1.1,terlalu matang
+7,59,27.21,94.67,0.9,terlalu matang
+7,60,27.1,94.18,1.11,terlalu matang
+8,1,28.66,80.52,0.01,belum matang
+8,2,28.49,80.74,0.01,belum matang
+8,3,28.17,80.35,0.0,belum matang
+8,4,28.82,80.42,0.0,belum matang
+8,5,28.76,81.16,0.01,belum matang
+8,6,28.98,80.7,0.01,belum matang
+8,7,29.02,80.66,0.01,belum matang
+8,8,28.72,80.62,0.01,belum matang
+8,9,28.48,80.64,0.01,belum matang
+8,10,28.11,80.84,0.01,belum matang
+8,11,29.11,80.99,0.01,belum matang
+8,12,28.97,81.23,0.01,belum matang
+8,13,28.57,80.77,0.0,belum matang
+8,14,28.41,80.99,0.01,belum matang
+8,15,28.59,81.31,0.01,belum matang
+8,16,28.81,81.33,0.0,belum matang
+8,17,28.09,81.41,0.0,belum matang
+8,18,28.86,81.89,0.02,belum matang
+8,19,28.46,82.04,0.01,belum matang
+8,20,28.39,81.8,0.01,belum matang
+8,21,28.37,82.16,0.01,belum matang
+8,22,28.56,82.45,0.02,belum matang
+8,23,29.04,82.33,0.0,belum matang
+8,24,29.03,82.64,0.01,belum matang
+8,25,27.98,82.87,0.01,belum matang
+8,26,28.94,83.47,0.0,belum matang
+8,27,28.29,84.04,0.0,belum matang
+8,28,28.65,84.38,0.01,belum matang
+8,29,28.62,84.64,0.02,belum matang
+8,30,28.48,85.3,0.01,belum matang
+8,31,28.34,85.63,0.09,belum matang
+8,32,29.42,86.06,0.0,belum matang
+8,33,29.3,86.84,0.06,belum matang
+8,34,29.08,87.31,0.32,belum matang
+8,35,28.9,87.9,0.36,belum matang
+8,36,28.26,88.7,0.19,belum matang
+8,37,29.21,89.42,0.18,belum matang
+8,38,28.19,89.75,0.12,belum matang
+8,39,29.57,90.21,0.17,belum matang
+8,40,28.66,90.41,0.13,belum matang
+8,41,29.16,91.03,0.14,belum matang
+8,42,28.83,91.84,0.33,belum matang
+8,43,29.06,91.87,0.14,belum matang
+8,44,29.31,92.34,0.28,matang
+8,45,29.23,92.87,0.38,matang
+8,46,29.65,92.95,0.45,matang
+8,47,28.59,93.42,0.54,matang
+8,48,28.82,93.73,0.53,matang
+8,49,28.38,93.69,0.35,matang
+8,50,27.58,94.48,0.38,matang
+8,51,28.45,94.19,0.57,matang
+8,52,28.97,94.58,0.52,terlalu matang
+8,53,28.48,94.61,0.6,terlalu matang
+8,54,29.37,94.77,0.76,terlalu matang
+8,55,28.89,95.02,0.76,terlalu matang
+8,56,27.91,94.96,0.74,terlalu matang
+8,57,28.3,95.08,0.99,terlalu matang
+8,58,28.57,95.09,1.11,terlalu matang
+8,59,28.68,95.62,1.07,terlalu matang
+8,60,27.68,95.3,1.14,terlalu matang
+9,1,28.72,78.29,0.01,belum matang
+9,2,29.03,78.06,0.01,belum matang
+9,3,27.68,78.3,0.02,belum matang
+9,4,28.13,77.96,0.01,belum matang
+9,5,29.11,77.91,0.0,belum matang
+9,6,28.16,78.06,0.01,belum matang
+9,7,27.34,78.38,0.01,belum matang
+9,8,27.54,78.59,0.02,belum matang
+9,9,28.01,78.57,0.01,belum matang
+9,10,28.48,78.21,0.02,belum matang
+9,11,28.24,78.46,0.01,belum matang
+9,12,29.32,78.88,0.02,belum matang
+9,13,28.86,78.45,0.01,belum matang
+9,14,28.38,78.92,0.02,belum matang
+9,15,28.06,78.94,0.01,belum matang
+9,16,27.0,79.02,0.01,belum matang
+9,17,27.94,78.81,0.01,belum matang
+9,18,28.62,78.85,0.01,belum matang
+9,19,28.67,79.66,0.0,belum matang
+9,20,28.21,79.52,0.02,belum matang
+9,21,28.23,79.91,0.0,belum matang
+9,22,27.76,79.98,0.0,belum matang
+9,23,27.8,80.06,0.01,belum matang
+9,24,27.44,80.49,0.02,belum matang
+9,25,28.29,80.7,0.01,belum matang
+9,26,28.29,81.4,0.0,belum matang
+9,27,28.36,81.55,0.01,belum matang
+9,28,26.95,81.89,0.01,belum matang
+9,29,28.77,82.44,0.0,belum matang
+9,30,28.58,82.73,0.14,belum matang
+9,31,28.45,83.16,0.02,belum matang
+9,32,28.56,83.83,0.03,belum matang
+9,33,27.92,84.36,0.28,belum matang
+9,34,28.12,84.97,0.15,belum matang
+9,35,27.82,85.18,0.05,belum matang
+9,36,28.51,86.12,0.23,belum matang
+9,37,28.43,86.63,0.11,belum matang
+9,38,28.83,87.01,0.08,belum matang
+9,39,28.67,87.46,0.45,belum matang
+9,40,28.42,88.29,0.14,belum matang
+9,41,28.23,88.62,0.19,belum matang
+9,42,28.7,89.06,0.36,belum matang
+9,43,29.72,89.51,0.3,belum matang
+9,44,28.57,90.31,0.3,belum matang
+9,45,27.97,90.05,0.33,matang
+9,46,28.16,91.02,0.54,matang
+9,47,27.87,90.77,0.4,matang
+9,48,29.08,91.18,0.36,matang
+9,49,28.36,91.28,0.52,matang
+9,50,28.03,91.5,0.61,matang
+9,51,28.0,91.5,0.55,terlalu matang
+9,52,28.2,92.05,0.61,terlalu matang
+9,53,28.37,92.08,0.56,terlalu matang
+9,54,28.43,92.39,0.58,terlalu matang
+9,55,28.38,92.53,0.79,terlalu matang
+9,56,29.04,92.31,0.62,terlalu matang
+9,57,28.48,92.58,1.0,terlalu matang
+9,58,28.98,92.68,1.02,terlalu matang
+9,59,28.29,92.39,1.03,terlalu matang
+9,60,28.88,92.82,1.19,terlalu matang
+10,1,27.66,81.94,0.01,belum matang
+10,2,28.04,82.45,0.0,belum matang
+10,3,27.84,82.34,0.01,belum matang
+10,4,28.06,81.86,0.01,belum matang
+10,5,27.74,82.3,0.02,belum matang
+10,6,29.13,82.24,0.01,belum matang
+10,7,27.93,82.09,0.01,belum matang
+10,8,27.68,82.22,0.02,belum matang
+10,9,27.33,82.46,0.02,belum matang
+10,10,27.77,81.85,0.01,belum matang
+10,11,28.48,82.33,0.01,belum matang
+10,12,27.58,82.56,0.01,belum matang
+10,13,27.71,82.39,0.01,belum matang
+10,14,27.37,82.87,0.01,belum matang
+10,15,28.44,82.95,0.01,belum matang
+10,16,27.61,82.84,0.01,belum matang
+10,17,27.38,82.94,0.0,belum matang
+10,18,28.42,82.93,0.01,belum matang
+10,19,27.97,83.13,0.01,belum matang
+10,20,27.59,83.54,0.0,belum matang
+10,21,27.89,83.96,0.0,belum matang
+10,22,27.49,83.91,0.01,belum matang
+10,23,28.01,84.16,0.01,belum matang
+10,24,28.39,84.43,0.01,belum matang
+10,25,28.17,85.05,0.01,belum matang
+10,26,27.34,85.24,0.01,belum matang
+10,27,26.74,85.58,0.01,belum matang
+10,28,27.79,85.89,0.01,belum matang
+10,29,28.19,86.18,0.01,belum matang
+10,30,27.7,86.89,0.16,belum matang
+10,31,27.36,87.47,0.05,belum matang
+10,32,28.23,87.85,0.3,belum matang
+10,33,27.72,88.25,0.13,belum matang
+10,34,27.68,89.03,0.0,belum matang
+10,35,27.3,89.22,0.24,belum matang
+10,36,28.69,89.97,0.14,belum matang
+10,37,27.87,90.78,0.08,belum matang
+10,38,27.95,91.29,0.24,belum matang
+10,39,27.93,91.82,0.0,belum matang
+10,40,28.17,91.99,0.04,belum matang
+10,41,28.09,92.87,0.23,belum matang
+10,42,28.31,93.37,0.39,matang
+10,43,28.65,93.61,0.29,matang
+10,44,27.03,93.8,0.22,matang
+10,45,28.92,94.16,0.34,matang
+10,46,28.11,94.53,0.53,matang
+10,47,27.52,94.85,0.32,matang
+10,48,27.17,94.94,0.42,matang
+10,49,27.62,95.16,0.32,terlalu matang
+10,50,27.79,95.2,0.57,terlalu matang
+10,51,27.87,95.39,0.51,terlalu matang
+10,52,27.45,95.91,0.72,terlalu matang
+10,53,26.89,96.01,0.61,terlalu matang
+10,54,28.17,96.16,0.61,terlalu matang
+10,55,27.67,96.06,0.85,terlalu matang
+10,56,27.84,96.7,0.79,terlalu matang
+10,57,27.48,96.1,0.69,terlalu matang
+10,58,27.04,96.53,0.99,terlalu matang
+10,59,27.04,96.71,0.97,terlalu matang
+10,60,27.9,96.91,1.19,terlalu matang
