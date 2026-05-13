@@ -132,12 +132,86 @@ LSTM (Long Short-Term Memory) adalah jenis Recurrent Neural Network yang diranca
 
 ---
 
+## Hasil Classification Report
+
+### 1. Logistic Regression
+
+```
+Accuracy Score : 0.9031
+F1 Score       : 0.9030
+
+                precision    recall  f1-score   support
+
+  belum matang       0.96      0.92      0.94       136
+        matang       0.82      0.88      0.85       130
+terlalu matang       0.93      0.90      0.92       147
+
+      accuracy                           0.90       413
+     macro avg       0.90      0.90      0.90       413
+  weighted avg       0.91      0.90      0.90       413
+```
+
+### 2. Support Vector Machine (SVM)
+
+```
+Accuracy Score : 0.9128
+F1 Score       : 0.9123
+
+                precision    recall  f1-score   support
+
+  belum matang       0.95      0.95      0.95       136
+        matang       0.85      0.88      0.86       130
+terlalu matang       0.94      0.90      0.92       147
+
+      accuracy                           0.91       413
+     macro avg       0.91      0.91      0.91       413
+  weighted avg       0.91      0.91      0.91       413
+```
+
+### 3. Random Forest
+
+```
+Accuracy Score : 0.9370
+F1 Score       : 0.9369
+
+                precision    recall  f1-score   support
+
+  belum matang       0.98      0.95      0.96       136
+        matang       0.87      0.94      0.90       130
+terlalu matang       0.96      0.93      0.94       147
+
+      accuracy                           0.94       413
+     macro avg       0.94      0.94      0.94       413
+  weighted avg       0.94      0.94      0.94       413
+```
+
+### 4. RNN (LSTM)
+
+```
+Accuracy Score : 0.9646
+F1 Score       : 0.9240
+
+                precision    recall  f1-score   support
+
+  belum matang       1.00      0.99      0.99       138
+        matang       0.83      0.86      0.84        22
+terlalu matang       0.92      0.95      0.94        38
+
+      accuracy                           0.96       198
+     macro avg       0.92      0.93      0.92       198
+  weighted avg       0.97      0.96      0.97       198
+```
+
+---
+
 ## Perbandingan Model
 
 | Aspek | Logistic Regression | SVM | Random Forest | LSTM (RNN) |
 |-------|-------------------|-----|---------------|------------|
 | **Jenis** | Linear | Kernel | Ensemble | Deep Learning |
 | **Library** | scikit-learn | scikit-learn | scikit-learn | TensorFlow |
+| **Accuracy** | 0.9031 | 0.9128 | 0.9370 | **0.9646** |
+| **F1 Score (macro avg)** | 0.90 | 0.91 | 0.94 | **0.93** |
 | **Memori temporal** | ❌ Tidak | ❌ Tidak | ❌ Tidak | ✅ Ya |
 | **Dependensi antar jam** | ❌ Diabaikan | ❌ Diabaikan | ❌ Diabaikan | ✅ Dipelajari |
 | **Non-linearity** | ❌ Tidak | ✅ Via kernel | ✅ Ya | ✅ Ya |
