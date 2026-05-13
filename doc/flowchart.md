@@ -1,6 +1,6 @@
 # Training Implementation Flowchart — Cassava Tapai Ripeness Prediction
 
-This document describes the training implementation flow for all four machine learning models used in classifying cassava tapai ripeness based on sensor data: temperature, humidity, and fermentation gas level.
+The flow of this research is carried out as illustrated in the flowchart below. There are 4 models that will be used in this research, namely Logistic Regression, Support Vector Machine (SVM), Random Forest, and LSTM (Long Short-Term Memory). These four models were selected because they represent different architectural characteristics in terms of linearity, kernel-based transformation, ensemble learning, and temporal sequence modeling. At the same time, the selection allows a comprehensive comparison between classical machine learning approaches and deep learning. After sharing the dataset, all models will be subjected to the same preprocessing and trained with various parameters. Then all models will be tested and evaluated, so that the model with the best accuracy can be determined.
 
 ---
 
