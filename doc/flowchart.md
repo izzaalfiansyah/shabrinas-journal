@@ -1,169 +1,169 @@
-# Flowchart Implementasi Training — Prediksi Kematangan Tapai Singkong
+# Training Implementation Flowchart — Cassava Tapai Ripeness Prediction
 
-Dokumen ini menggambarkan alur implementasi training untuk keempat model machine learning yang digunakan dalam klasifikasi kematangan tapai singkong berdasarkan data sensor suhu, kelembaban, dan kadar gas fermentasi.
+This document describes the training implementation flow for all four machine learning models used in classifying cassava tapai ripeness based on sensor data: temperature, humidity, and fermentation gas level.
 
 ---
 
-## 1. Alur Umum (Overview)
+## 1. General Overview
 
 ```mermaid
 flowchart TD
-    A([🟢 Mulai]) --> B[Load Dataset\ndataset_kematangan_tapai.csv]
-    B --> C[Eksplorasi Data\nEDA & Statistik Deskriptif]
-    C --> D{Data\nBersih?}
-    D -- Tidak --> E[Preprocessing\nHandling Missing Values\nRemove Duplicates]
-    E --> F[Feature Engineering\nsuhu · kelembaban · kadar_gas]
-    D -- Ya --> F
-    F --> G[Encode Label\nbelum matang · matang · terlalu matang]
+    A([🟢 Start]) --> B[Load Dataset\ndataset_kematangan_tapai.csv]
+    B --> C[Exploratory Data Analysis\nDescriptive Statistics]
+    C --> D{Data\nClean?}
+    D -- No --> E[Preprocessing\nHandle Missing Values\nRemove Duplicates]
+    E --> F[Feature Engineering\ntemperature · humidity · gas_level]
+    D -- Yes --> F
+    F --> G[Encode Labels\nunripe · ripe · overripe]
     G --> H[Split Data\nTrain 69% · Test 31%]
-    H --> I{Pilih\nModel}
+    H --> I{Select\nModel}
     I --> J[Logistic\nRegression]
     I --> K[Support Vector\nMachine]
     I --> L[Random\nForest]
     I --> M[RNN / LSTM]
-    J --> N[Evaluasi Model]
+    J --> N[Evaluate Model]
     K --> N
     L --> N
     M --> N
-    N --> O[Bandingkan\nAccuracy & F1 Score]
-    O --> P([🔴 Selesai])
+    N --> O[Compare\nAccuracy & F1 Score]
+    O --> P([🔴 End])
 ```
 
 ---
 
-## 2. Preprocessing & Persiapan Data
+## 2. Preprocessing & Data Preparation
 
 ```mermaid
 flowchart TD
-    A([Mulai Preprocessing]) --> B[Baca CSV\npd.read_csv]
-    B --> C[Cek Info Dataset\ndf.info · df.describe]
-    C --> D[Cek Missing Values\ndf.isnull().sum]
-    D --> E{Ada\nMissing\nValues?}
-    E -- Ya --> F[Isi atau Drop\nMissing Values]
-    E -- Tidak --> G[Pilih Fitur\nsuhu · kelembaban · kadar_gas]
+    A([Start Preprocessing]) --> B[Read CSV\npd.read_csv]
+    B --> C[Check Dataset Info\ndf.info · df.describe]
+    C --> D[Check Missing Values\ndf.isnull().sum]
+    D --> E{Missing\nValues\nExist?}
+    E -- Yes --> F[Fill or Drop\nMissing Values]
+    E -- No --> G[Select Features\ntemperature · humidity · gas_level]
     F --> G
-    G --> H[Encode Label Target\nLabelEncoder\nbelum matang=0 · matang=1 · terlalu matang=2]
-    H --> I[Normalisasi Fitur\nStandardScaler\nmean=0 · std=1]
-    I --> J[Split Train/Test\ntrain_test_split\ntest_size=0.31 · stratify=y]
-    J --> K([Selesai Preprocessing])
+    G --> H[Encode Target Label\nLabelEncoder\nunripe=0 · ripe=1 · overripe=2]
+    H --> I[Normalize Features\nStandardScaler\nmean=0 · std=1]
+    I --> J[Train/Test Split\ntrain_test_split\ntest_size=0.31 · stratify=y]
+    J --> K([Preprocessing Done])
 ```
 
 ---
 
-## 3. Training Logistic Regression
+## 3. Logistic Regression Training
 
 ```mermaid
 flowchart TD
-    A([Mulai LR]) --> B[Import\nLogisticRegression\nfrom sklearn.linear_model]
-    B --> C[Inisialisasi Model\nLogisticRegression\nmax_iter=1000\nmulti_class=auto]
+    A([Start LR]) --> B[Import\nLogisticRegression\nfrom sklearn.linear_model]
+    B --> C[Initialize Model\nLogisticRegression\nmax_iter=1000\nmulti_class=auto]
     C --> D[Fit Model\nmodel.fit\nX_train · y_train]
-    D --> E[Prediksi\nmodel.predict\nX_test]
-    E --> F[Hitung Metrik\naccuracy_score\nf1_score\nclassification_report]
-    F --> G{Akurasi\n≥ 90%?}
-    G -- Tidak --> H[Tuning Hyperparameter\nC · solver · penalty]
+    D --> E[Predict\nmodel.predict\nX_test]
+    E --> F[Compute Metrics\naccuracy_score\nf1_score\nclassification_report]
+    F --> G{Accuracy\n≥ 90%?}
+    G -- No --> H[Tune Hyperparameters\nC · solver · penalty]
     H --> C
-    G -- Ya --> I[Simpan Hasil\nClassification Report]
-    I --> J([Selesai LR\nAcc: 0.9031])
+    G -- Yes --> I[Save Results\nClassification Report]
+    I --> J([LR Done\nAcc: 0.9031])
 ```
 
 ---
 
-## 4. Training Support Vector Machine (SVM)
+## 4. Support Vector Machine (SVM) Training
 
 ```mermaid
 flowchart TD
-    A([Mulai SVM]) --> B[Import\nSVC\nfrom sklearn.svm]
-    B --> C[Inisialisasi Model\nSVC\nkernel=rbf\nC=1.0 · gamma=scale]
+    A([Start SVM]) --> B[Import\nSVC\nfrom sklearn.svm]
+    B --> C[Initialize Model\nSVC\nkernel=rbf\nC=1.0 · gamma=scale]
     C --> D[Fit Model\nsvm.fit\nX_train · y_train]
-    D --> E[Prediksi\nsvm.predict\nX_test]
-    E --> F[Hitung Metrik\naccuracy_score\nf1_score\nclassification_report]
-    F --> G{Akurasi\n≥ 90%?}
-    G -- Tidak --> H[Tuning Hyperparameter\nGridSearchCV\nC · gamma · kernel]
+    D --> E[Predict\nsvm.predict\nX_test]
+    E --> F[Compute Metrics\naccuracy_score\nf1_score\nclassification_report]
+    F --> G{Accuracy\n≥ 90%?}
+    G -- No --> H[Tune Hyperparameters\nGridSearchCV\nC · gamma · kernel]
     H --> C
-    G -- Ya --> I[Simpan Hasil\nClassification Report]
-    I --> J([Selesai SVM\nAcc: 0.9128])
+    G -- Yes --> I[Save Results\nClassification Report]
+    I --> J([SVM Done\nAcc: 0.9128])
 ```
 
 ---
 
-## 5. Training Random Forest
+## 5. Random Forest Training
 
 ```mermaid
 flowchart TD
-    A([Mulai RF]) --> B[Import\nRandomForestClassifier\nfrom sklearn.ensemble]
-    B --> C[Inisialisasi Model\nRandomForestClassifier\nn_estimators=200\nrandom_state=42]
+    A([Start RF]) --> B[Import\nRandomForestClassifier\nfrom sklearn.ensemble]
+    B --> C[Initialize Model\nRandomForestClassifier\nn_estimators=200\nrandom_state=42]
     C --> D[Fit Model\nrf.fit\nX_train · y_train]
-    D --> E[Prediksi\nrf.predict\nX_test]
-    E --> F[Hitung Metrik\naccuracy_score\nf1_score\nclassification_report]
-    F --> G[Plot Feature Importance\nsuhu · kelembaban · kadar_gas]
-    G --> H{Akurasi\n≥ 90%?}
-    H -- Tidak --> I[Tuning Hyperparameter\nmax_depth · min_samples_split\nmax_features]
+    D --> E[Predict\nrf.predict\nX_test]
+    E --> F[Compute Metrics\naccuracy_score\nf1_score\nclassification_report]
+    F --> G[Plot Feature Importance\ntemperature · humidity · gas_level]
+    G --> H{Accuracy\n≥ 90%?}
+    H -- No --> I[Tune Hyperparameters\nmax_depth · min_samples_split\nmax_features]
     I --> C
-    H -- Ya --> J[Simpan Hasil\nClassification Report\n+ Feature Importance]
-    J --> K([Selesai RF\nAcc: 0.9370])
+    H -- Yes --> J[Save Results\nClassification Report\n+ Feature Importance]
+    J --> K([RF Done\nAcc: 0.9370])
 ```
 
 ---
 
-## 6. Training RNN / LSTM
+## 6. RNN / LSTM Training
 
 ```mermaid
 flowchart TD
-    A([Mulai LSTM]) --> B[Import TensorFlow/Keras\nLSTM · Bidirectional\nDense · Dropout]
-    B --> C[Reshape Data ke Sequence\nWindow = 10 jam\nformat: samples · timesteps · features\n= N · 10 · 3]
-    C --> D[Split Train/Test\nSequence-aware split]
-    D --> E[Bangun Arsitektur Model\nBidirectional LSTM 64 unit\nDropout 0.3\nBidirectional LSTM 32 unit\nDropout 0.2\nDense 3 unit · Softmax]
-    E --> F[Kompilasi Model\noptimizer=adam\nloss=sparse_categorical_crossentropy\nmetrics=accuracy]
-    F --> G[Training\nmodel.fit\nX_train · y_train\nepochs=50\nbatch_size=32\nvalidation_split=0.2]
+    A([Start LSTM]) --> B[Import TensorFlow/Keras\nLSTM · Bidirectional\nDense · Dropout]
+    B --> C[Reshape Data into Sequences\nWindow = 10 hours\nshape: samples · timesteps · features\n= N · 10 · 3]
+    C --> D[Train/Test Split\nSequence-aware split]
+    D --> E[Build Model Architecture\nBidirectional LSTM 64 units\nDropout 0.3\nBidirectional LSTM 32 units\nDropout 0.2\nDense 3 units · Softmax]
+    E --> F[Compile Model\noptimizer=adam\nloss=sparse_categorical_crossentropy\nmetrics=accuracy]
+    F --> G[Train\nmodel.fit\nX_train · y_train\nepochs=50\nbatch_size=32\nvalidation_split=0.2]
     G --> H[Plot Training History\nLoss & Accuracy Curve\nTrain vs Validation]
-    H --> I{Overfitting\natau\nUnderfitting?}
-    I -- Overfitting --> J[Tambah Dropout\natau Kurangi Epoch]
-    I -- Underfitting --> K[Tambah Layer\natau Tingkatkan Epoch]
+    H --> I{Overfitting\nor\nUnderfitting?}
+    I -- Overfitting --> J[Increase Dropout\nor Reduce Epochs]
+    I -- Underfitting --> K[Add More Layers\nor Increase Epochs]
     J --> F
     K --> F
-    I -- Tidak --> L[Evaluasi\nmodel.evaluate\nX_test · y_test]
-    L --> M[Prediksi\nnp.argmax\nmodel.predict · X_test]
-    M --> N[Hitung Metrik\naccuracy_score\nclassification_report]
-    N --> O[Simpan Model\nmodel.save]
-    O --> P([Selesai LSTM\nAcc: 0.9646])
+    I -- Neither --> L[Evaluate\nmodel.evaluate\nX_test · y_test]
+    L --> M[Predict\nnp.argmax\nmodel.predict · X_test]
+    M --> N[Compute Metrics\naccuracy_score\nclassification_report]
+    N --> O[Save Model\nmodel.save]
+    O --> P([LSTM Done\nAcc: 0.9646])
 ```
 
 ---
 
-## 7. Evaluasi & Perbandingan Model
+## 7. Model Evaluation & Comparison
 
 ```mermaid
 flowchart TD
-    A([Mulai Evaluasi]) --> B[Kumpulkan Hasil\nSemua 4 Model]
-    B --> C[Buat Tabel Perbandingan\nAccuracy · F1 Score\nPrecision · Recall]
-    C --> D[Plot Confusion Matrix\nSetiap Model]
-    D --> E[Plot Bar Chart\nPerbandingan Accuracy]
-    E --> F{Model\nTerbaik?}
+    A([Start Evaluation]) --> B[Collect Results\nAll 4 Models]
+    B --> C[Build Comparison Table\nAccuracy · F1 Score\nPrecision · Recall]
+    C --> D[Plot Confusion Matrix\nPer Model]
+    D --> E[Plot Bar Chart\nAccuracy Comparison]
+    E --> F{Best\nModel?}
     F --> G[LSTM\nAcc 0.9646\nTime Series Aware]
     F --> H[Random Forest\nAcc 0.9370\nInterpretable]
-    F --> I[SVM\nAcc 0.9128\nRobust Outlier]
-    F --> J[Logistic Reg\nAcc 0.9031\nPaling Cepat]
-    G --> K{Kriteria\nPemilihan}
+    F --> I[SVM\nAcc 0.9128\nRobust to Outliers]
+    F --> J[Logistic Reg\nAcc 0.9031\nFastest Training]
+    G --> K{Selection\nCriteria}
     H --> K
     I --> K
     J --> K
-    K -- Akurasi Tertinggi --> L[✅ Pilih LSTM]
-    K -- Interpretabilitas --> M[✅ Pilih Random Forest]
-    K -- Kecepatan Training --> N[✅ Pilih Logistic Regression]
-    L --> O([Selesai Evaluasi])
+    K -- Highest Accuracy --> L[✅ Choose LSTM]
+    K -- Interpretability --> M[✅ Choose Random Forest]
+    K -- Training Speed --> N[✅ Choose Logistic Regression]
+    L --> O([Evaluation Done])
     M --> O
     N --> O
 ```
 
 ---
 
-## 8. Ringkasan Alur Per Model
+## 8. Per-Model Summary
 
-| Tahap | Logistic Regression | SVM | Random Forest | LSTM |
+| Stage | Logistic Regression | SVM | Random Forest | LSTM |
 |-------|-------------------|-----|---------------|------|
 | **Input** | `[N, 3]` flat | `[N, 3]` flat | `[N, 3]` flat | `[N, 10, 3]` sequence |
-| **Normalisasi** | StandardScaler | StandardScaler | Tidak wajib | MinMaxScaler |
+| **Normalization** | StandardScaler | StandardScaler | Not required | MinMaxScaler |
 | **Training** | `model.fit()` | `svm.fit()` | `rf.fit()` | `model.fit()` epochs |
 | **Tuning** | C, solver | C, gamma, kernel | n_estimators, depth | epochs, dropout, units |
-| **Output** | Koefisien linear | Support vectors | Decision trees + feature importance | Bobot neural network |
-| **Akurasi** | 0.9031 | 0.9128 | 0.9370 | **0.9646** |
+| **Output** | Linear coefficients | Support vectors | Decision trees + feature importance | Neural network weights |
+| **Accuracy** | 0.9031 | 0.9128 | 0.9370 | **0.9646** |
