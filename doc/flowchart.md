@@ -36,8 +36,8 @@ flowchart TD
 ```mermaid
 flowchart TD
     A([Start Preprocessing]) --> B[Read CSV\npd.read_csv]
-    B --> C[Check Dataset Info\ndf.info · df.describe]
-    C --> D[Check Missing Values\ndf.isnull().sum]
+    B --> C[Check Dataset Info]
+    C --> D[Check Missing Values]
     D --> E{Missing\nValues\nExist?}
     E -- Yes --> F[Fill or Drop\nMissing Values]
     E -- No --> G[Select Features\ntemperature · humidity · gas_level]
@@ -159,11 +159,11 @@ flowchart TD
 
 ## 8. Per-Model Summary
 
-| Stage | Logistic Regression | SVM | Random Forest | LSTM |
-|-------|-------------------|-----|---------------|------|
-| **Input** | `[N, 3]` flat | `[N, 3]` flat | `[N, 3]` flat | `[N, 10, 3]` sequence |
-| **Normalization** | StandardScaler | StandardScaler | Not required | MinMaxScaler |
-| **Training** | `model.fit()` | `svm.fit()` | `rf.fit()` | `model.fit()` epochs |
-| **Tuning** | C, solver | C, gamma, kernel | n_estimators, depth | epochs, dropout, units |
-| **Output** | Linear coefficients | Support vectors | Decision trees + feature importance | Neural network weights |
-| **Accuracy** | 0.9031 | 0.9128 | 0.9370 | **0.9646** |
+| Stage             | Logistic Regression | SVM              | Random Forest                       | LSTM                   |
+| ----------------- | ------------------- | ---------------- | ----------------------------------- | ---------------------- |
+| **Input**         | `[N, 3]` flat       | `[N, 3]` flat    | `[N, 3]` flat                       | `[N, 10, 3]` sequence  |
+| **Normalization** | StandardScaler      | StandardScaler   | Not required                        | MinMaxScaler           |
+| **Training**      | `model.fit()`       | `svm.fit()`      | `rf.fit()`                          | `model.fit()` epochs   |
+| **Tuning**        | C, solver           | C, gamma, kernel | n_estimators, depth                 | epochs, dropout, units |
+| **Output**        | Linear coefficients | Support vectors  | Decision trees + feature importance | Neural network weights |
+| **Accuracy**      | 0.9031              | 0.9128           | 0.9370                              | **0.9646**             |
