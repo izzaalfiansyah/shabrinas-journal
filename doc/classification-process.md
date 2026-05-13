@@ -63,7 +63,15 @@ Random Forest achieves the highest accuracy among the three non-temporal models 
 
 ### 3.4 Long Short-Term Memory (LSTM) Recurrent Neural Network
 
-The fourth approach treats the fermentation data as a genuine time series and applies a Bidirectional Long Short-Term Memory (LSTM) network, a specialized variant of Recurrent Neural Networks (RNN) designed to model sequential dependencies in temporal data (Hochreiter & Schmidhuber, 1997). Rather than treating each hourly observation as an independent sample, the dataset is restructured into overlapping sliding windows of 10 consecutive time steps, so that each training sample represents a contiguous sequence of 10 hours of sensor readings across three measured variables. The Bidirectional LSTM architecture processes each sequence in both forward and backward temporal directions, allowing the model to exploit contextual information from both past and future observations within each window. The network is trained by minimizing a multi-class classification loss function through an iterative gradient-based optimization procedure, and a stratified split is applied at the trial level to prevent data leakage across fermentation experiments.
+The fourth approach treats the fermentation data as a genuine time series and applies a Bidirectional Long Short-Term Memory (LSTM) network, a specialized variant of Recurrent Neural Networks (RNN) designed to model sequential dependencies in temporal data (Hochreiter & Schmidhuber, 1997). Rather than treating each hourly observation as an independent sample, the dataset is restructured into overlapping sliding windows of 10 consecutive time steps, so that each training sample represents a contiguous sequence of 10 hours of sensor readings across three measured variables. The Bidirectional LSTM architecture processes each sequence in both forward and backward temporal directions, allowing the model to exploit contextual information from both past and future observations within each window. The network is trained by minimizing a multi-class classification loss function through an iterative gradient-based optimization procedure, and a stratified split is applied at the trial level to prevent data leakage across fermentation experiments. The model is trained over 50 iterations with a batch size of 32 samples per update.
+
+The network architecture consists of the following sequential layers:
+
+- **First LSTM Layer (64 units)** — Processes the input sequence and learns temporal patterns across the 3-hour observation window, passing its intermediate outputs forward to the next layer.
+- **First Dropout Layer (rate = 0.2)** — Randomly deactivates 20% of neurons during training to reduce overfitting and improve generalization.
+- **Second LSTM Layer (32 units)** — Further distills the temporal representations learned by the first layer into a compact feature vector summarizing the entire sequence.
+- **Second Dropout Layer (rate = 0.2)** — Applies the same regularization mechanism as the first dropout layer to the condensed representations.
+- **Output Layer (3 units)** — A fully connected layer that maps the final learned representation to probability scores for each of the three ripeness classes, using a softmax function to ensure the probabilities sum to one.
 
 The classification report of this model is as follows:
 
